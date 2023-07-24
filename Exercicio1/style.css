@@ -10,3 +10,6 @@ input[type=number]{
     margin: 8px 0;
     box-sizing: border-box;
 }
+.result{
+    font-size: 20px;
+}
