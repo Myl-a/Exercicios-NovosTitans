@@ -1,0 +1,63 @@
+/* Todos os elementos da página */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* Elementos com o ID "titulo" */
+#titulo {
+    font-family: sans-serif;
+    color: #380B61;
+    margin-left: 7%;
+} 
+/* Elementos com o ID "subtitulo" */
+#subtitulo {
+    font-family: sans-serif;
+    color: #380B61;
+    margin-left: 10%;
+} 
+/* Elemento de tag <body> */
+body{
+    background-color: #F0F8FF;
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #59429d;
+    margin-left: 36%;
+    margin-top: 2%;
+    justify-content: center;
+}
+
+/* Elementos de tags <body>, <input>, <Select>, <textarea> e <button> */
+input, select, textarea, button {
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #59429d;
+    border-radius: 5px;
+}
+
+/* Elementos de classe "grupo" nos estados das pseudoclasses "before" e "after" */
+.grupo:before, .grupo:after {
+    display: table;
+}
+
+/* Elementos de classe "grupo" no estado da pseudoclasse "after" */
+.grupo:after {
+    clear: both;
+}
+
+/* Elementos de classe "campo" */
+.campo {
+    margin-bottom: 1em;
+}
+
+/* Elementos de classe "campo" de tag <label> */
+.campo label {
+    margin-bottom: 0.2em;
+    color: #59429d;
+    display: block;
+}
+
+/* Elementos de classe "campo" ou "grupo" de tag <fieldset> */
+fieldset.grupo .campo {
+    float:  left;
+    margin-right: 1em;
+}
