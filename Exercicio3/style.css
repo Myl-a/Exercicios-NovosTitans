@@ -50,6 +50,7 @@ input, select, textarea, button {
     color: #59429d;
     display: block;
 }
+
 /* Elementos de classe "campo" ou "grupo" de tag <fieldset> */
 fieldset.grupo .campo {
     float:  left;
