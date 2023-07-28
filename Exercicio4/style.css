@@ -1,0 +1,54 @@
+body {
+    background-color: #e0d6d6;
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #eee8e8;
+    margin-left: 36%;
+    margin-top: 2%;
+}
+/* Elementos com o ID "titulo" */
+#titulo {
+    font-family: sans-serif;
+    color: #8d2828;
+    margin-left: 7%;
+}
+/* Elementos de tags <body>, <input>, <Select>, <textarea> e <button> */
+body, input, select, textarea, button {
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #e034348a;
+    border-radius: 5px;
+}
+fieldset {
+    border: 5px solid #000000;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    background-color: #F0F8FF;
+}
+/* Elementos de classe "numeros" */
+.numeros {
+    margin-bottom: 1em;
+}
+/* Elementos de classe "numeros" de tag <label> */
+.numeros label {
+    margin-bottom: 0.2em;
+    color: #9d4242;
+    display: block;
+}
+/* Elemento de classe "botao" */
+.btn-primary{
+    background-color: #ffffff;
+    color: #fa7a7a;
+    padding: 5px 8px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: all .3s ease;
+}
+.btn-primary:hover{
+    background-color: #f77070;
+    color: #ffffff;
+}
