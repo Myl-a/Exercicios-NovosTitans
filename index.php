@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Exercicios</title>
+    <title>Página de Índice</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
