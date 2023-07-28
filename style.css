@@ -13,3 +13,10 @@ section {
     margin-bottom: 20px;
     border-bottom: 1px solid #ccc;
 }
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 10px;
+}
