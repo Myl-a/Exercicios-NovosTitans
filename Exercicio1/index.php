@@ -15,7 +15,7 @@
                 <label for="value2">Digite o segundo valor: </label>
                 <input type="number" name="value2" id="value2">
             </div>
-            <button type="submit">Salvar</button>
+            <button type="submit">Concluido</button>
         </form>
         <?php
             if (isset($_POST['value1']) && isset($_POST['value2'])){
