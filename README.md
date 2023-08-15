@@ -3,7 +3,7 @@
 ## Como Rodar
 
 ### Requisitos
-- PHP 8 ou superior
+- Docker
 
 ### Passo a passo
 - Acesse a pasta do projeto
