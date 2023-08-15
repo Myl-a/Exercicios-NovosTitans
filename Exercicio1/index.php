@@ -6,7 +6,7 @@
     </head>
     <body>
         <h1>Exercicio 1</h1>
-        <form action="/exercicio1" method="post">
+        <form action="/Exercicio1/index.php" method="post">
             <div>
                 <label for="value1">Digite o primeiro valor: </label>
                 <input type="number" name="value1" id="value1">
