@@ -22,7 +22,7 @@ class Exercicio8Cest
         $I->see("SOL");
         $I->amOnPage('/Exercicio9/form.html');
         $I->fillField('countRepeat', 'abc');
-        $I->click('Enviar');
+        $I->click('Calcular');
         $I->see("Por favor, insira um número válido.");
     }
 }
