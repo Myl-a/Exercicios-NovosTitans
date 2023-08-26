@@ -15,8 +15,7 @@
         <div class="resultado" id="resultado">
             <?php
             if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-                $numero = $_POST['numero'];
-
+                $numero = $_POST['numeroMes']; // Alterado de 'numero' para 'numeroMes'
                 if ($numero >= 1 && $numero <= 12) {
                     $meses = [
                         1 => "Janeiro",
@@ -32,12 +31,11 @@
                         11 => "Novembro",
                         12 => "Dezembro"
                     ];
-
                     echo "<p>O número $numero corresponde ao mês de " . $meses[$numero] . ".</p>";
                 } else {
                     echo "<p>Não existe mês com o número $numero.</p>";
                 }
-            }
+            }            
             ?>
         </div>
     </div>
