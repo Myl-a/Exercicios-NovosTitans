@@ -12,7 +12,7 @@
             <h2>Exercicio 1</h2>
             <ul>
                 <li>
-                    <a href="/Exercicio2/">Exercicio 1</a>
+                    <a href="/Exercicio1/">Exercicio 1</a>
                 </li>
             </ul>
         </section>
