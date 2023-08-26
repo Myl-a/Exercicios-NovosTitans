@@ -57,7 +57,5 @@
             </ul>
         </section>
     </main>
-    </main>
-    </main>
 </body>
 </html>
