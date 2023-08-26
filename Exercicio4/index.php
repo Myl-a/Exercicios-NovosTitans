@@ -24,17 +24,34 @@
             <button type="submit" class="btn-primary">Salvar</button>
         </form>
     </fieldset>
-<?php
+    <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $num1 = $_POST['numero1'];
         $num2 = $_POST['numero2'];
         $num3 = $_POST['numero3'];
-        $nums = array($num1, $num2, $num3);
-        rsort($nums);
+        if ($num1 >= $num2 && $num1 >= $num3) {
+            if ($num2 >= $num3) {
+                $nums = array($num1, $num2, $num3);
+            } else {
+                $nums = array($num1, $num3, $num2);
+            }
+        } elseif ($num2 >= $num1 && $num2 >= $num3) {
+            if ($num1 >= $num3) {
+                $nums = array($num2, $num1, $num3);
+            } else {
+                $nums = array($num2, $num3, $num1);
+            }
+        } else {
+            if ($num1 >= $num2) {
+                $nums = array($num3, $num1, $num2);
+            } else {
+                $nums = array($num3, $num2, $num1);
+            }
+        }
         $response_msg = "Números em ordem decrescente: " . implode(", ", $nums);
         echo "<script> alert('" . $response_msg . "'); </script>";
-}
-?>
+    }
+    ?>
 </body>
 </html>
 
