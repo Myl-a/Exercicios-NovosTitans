@@ -6,7 +6,6 @@
 <body>
     <div class="container">
         <h1>Recibo de Empréstimo</h1>
-        
             <?php
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $livro = $_POST["book-name"];

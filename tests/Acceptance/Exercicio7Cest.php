@@ -23,6 +23,9 @@ class Exercicio7Cest
     {
         $I->amOnPage('/Exercicio7');
         $I->fillField('book-name', 'livro');
-        $I->fillField('user-type', 'tipoUsuario');
+        $I->selectOption('user-type', 'tipoUsuario');
+        $I->click('Gerar Recibo');
+        $I->see('Recibo gerado com sucesso');
+
     }
 }
