@@ -2,24 +2,6 @@
 <head>
     <link rel="stylesheet" href="style.css">
     <title>Biblioteca Universitária</title>
-    <script>
-        function generateReceipt() {
-            const bookName = document.getElementById("book-name").value;
-            const userType = document.getElementById("user-type").value;
-            const receiptDiv = document.getElementById("receipt");
-            const receiptText = document.getElementById("receipt-text");
-            const xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function() {
-                if (this.readyState === 4 && this.status === 200) {
-                    receiptText.innerText = this.responseText;
-                    receiptDiv.classList.remove("hidden");
-                }
-            };
-            xhttp.open("POST", "generate_receipt.php", true);
-            xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-            xhttp.send(`book-name=${bookName}&user-type=${userType}`);
-    }
-    </script>
 </head>
 <body>
     <div class="container">
