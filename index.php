@@ -5,74 +5,51 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Bem-vindo à Página de Índice</h1>
-    </header>
-    <main>
-        <section>
-            <h2>Exercicio 1</h2>
-            <ul>
-                <li>
-                    <a href="/Exercicio2/">Exercicio 1</a>
-                </li>
-            </ul>
-        </section>
-        <section>
-            <h2>Exercicio 2</h2>
-            <ul>
-                <li>
-                    <a href="/Exercicio2/">Exercicio 2</a>
-                </li>
-            </ul>
-        </section>
-        <section>
-            <h2>Exercicio 3</h2>
-            <ul>
-                <li>
-                    <a href="/Exercicio3/">Exercicio 3</a>
-                </li>
-            </ul>
-        </section>
-        <section>
-            <h2>Exercicio 4</h2>
-            <ul>
-                <li>
-                    <a href="/Exercicio4/">Exercicio 4</a>
-                </li>
-            </ul>
-        </section>
-        <section>
-            <h2>Exercicio 5</h2>
-            <ul>
-                <li>
-                    <a href="/Exercicio5/">Exercicio 5</a>
-                </li>
-            </ul>
-        </section>
-        <section>
-            <h2>Exercicio 6</h2>
-            <ul>
-                <li>
-                    <a href="/Exercicio6/">Exercicio 6</a>
-                </li>
-            </ul>
-        </section>
-        <section>
-            <h2>Exercicio 7</h2>
-            <ul>
-                <li>
-                    <a href="/Exercicio7/">Exercicio 7</a>
-                </li>
-            </ul>
-        </section>
-        <section>
-            <h2>Exercicio 8</h2>
-            <ul>
-                <li>
-                    <a href="/Exercicio8/">Exercicio 8</a>
-                </li>
-            </ul>
-        </section>
-    </main>
+    <h1>Indice</h1>
+    <ul>
+        <li>
+            <a href="/exercicio1">Exercicio 1</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <a href="/Exercicio2">Exercicio 2</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <a href="/Exercicio3">Exercicio 3</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <a href="/Exercicio4">Exercicio 4</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <a href="/Exercicio5">Exercicio 5</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <a href="/Exercicio6/">Exercicio 6</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <a href="/Exercicio7/">Exercicio 7</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <a href="/Exercicio8/">Exercicio 8</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <a href="/Exercicio9/">Exercicio 9</a>
+        </li>
+    </ul>
 </body>
 </html>
