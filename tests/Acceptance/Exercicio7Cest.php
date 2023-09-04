@@ -23,9 +23,17 @@ class Exercicio7Cest
     {
         $I->amOnPage('/Exercicio7');
         $I->fillField('book-name', 'livro');
-        $I->selectOption('user-type', 'tipoUsuario');
+        $I->selectOption('user-type', 'aluno');
         $I->click('Gerar Recibo');
-        $I->see('Recibo gerado com sucesso');
+        $I->see("Recibo de Empréstimo");
+        $I->see("Livro: livro");
+        $I->see("Tipo de Usuário: aluno");
+        $expectedReturnDate = date('d-m-Y', strtotime("+3 days"));
+        $I->see("Data de Devolução: $expectedReturnDate");
+        $I->click('Voltar para a Página Inicial');
+        $I->amOnPage('/Exercicio7');
+        $I->see("Biblioteca Universitária");
+}
 
-    }
+
 }

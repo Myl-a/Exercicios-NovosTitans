@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" href="style.css">
-    <title>Recibo de Empréstimo</title>
+    <title>Biblioteca Universitária</title>
 </head>
 <body>
     <div class="container">
@@ -17,7 +17,9 @@
                 echo "<p><strong>Data de Devolução:</strong> $dataDevolucao</p>";
             }
             ?>
-        <button onclick="window.location.href = 'index.php';" class="btn-primary">Voltar para a Página Inicial</button>
+            <form>
+                <button onclick="window.location.href = 'index.php';" class="btn-primary">Voltar para a Página Inicial</button>
+            </form>
     </div>
 </body>
 </html>
