@@ -51,5 +51,10 @@
             <a href="/Exercicio9/">Exercicio 9</a>
         </li>
     </ul>
+    <ul>
+        <li>
+            <a href="/Exercicio10/">Exercicio 10</a>
+        </li>
+    </ul>
 </body>
 </html>
