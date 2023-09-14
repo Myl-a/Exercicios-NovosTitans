@@ -1,9 +1,18 @@
 version: '3.9'
-services: 
+services:
+  db_mariadb:
+    container_name: db_mariadb
+    image: mariadb:latest
+    tty: true
+    ports:
+      - "3387:3306"
+    environment:
+      - MARIADB_DATABASE=test  # Fixed the environment variable assignment
+      - MARIADB_ROOT_PASSWORD=root
+      - MARIADB_USER=root
   php-apache:
     image: php:8.2.4-apache-buster
     ports:
       - 8181:80
     volumes:
       - ./:/var/www/html
-
