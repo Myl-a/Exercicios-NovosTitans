@@ -20,8 +20,9 @@
             $dbh = null;
         }
         catch (PDOException $e) {
-            print "Error!: " . e->getMessage . "\n";
+            print "Error!: " . $e->getMessage() . "\n";
         }
+    
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $inputNumbers = $_POST["inputNumbers"];
             $numbersArray = explode(",", $inputNumbers);
