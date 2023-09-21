@@ -1,18 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=drive-width, initial-scale=1.0">
+    <title>Exercicio 15</title>
     <link rel="stylesheet" href="style.css">
-    <title>Exercicio 11</title>
+    <title>Exercicio 15</title>
 </head>
 
 <body>
-    <form action="process.php" method="get">
-        <label>Informe um número para saber a tabuada:</label>
-        <input type="number" id="numero" name="numero">
-        <input type="submit" value="Enviar">
+    <h1>Tabuada de um Número</h1>
+    <form action="conection.php" method="post">
+        <label for="numero">Número:</label>
+        <input type="number" name="numero" id="numero" required>
+        <button type="submit">Calcular</button>
     </form>
+    <h2>Resultados</h2>
+    <ul id="resultados">
+    </ul>
 </body>
 </html>
