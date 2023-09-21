@@ -7,12 +7,14 @@
     <link rel="stylesheet" href="style.css">
     <title>Exercicio 11</title>
 </head>
-
 <body>
     <form action="process.php" method="get">
         <label>Informe um número para saber a tabuada:</label>
         <input type="number" id="numero" name="numero">
         <input type="submit" value="Enviar">
     </form>
+    <h2>Resultados</h2>
+    <ul id="resultados">
+    </ul>
 </body>
 </html>
