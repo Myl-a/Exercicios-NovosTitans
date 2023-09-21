@@ -14,5 +14,8 @@
         <input type="number" id="numero" name="numero">
         <input type="submit" value="Enviar">
     </form>
+    <h2>Resultados</h2>
+    <ul id="resultados">
+    </ul>
 </body>
 </html>
