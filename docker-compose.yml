@@ -14,10 +14,12 @@ services:
     ports:
       - 3306:3306
     environment:
-      MARIADB_ROOT_PASSWORD: root1
-      MARIADB_DATABASE: novos_titans
-      MARIADB_USER: sam_user
-      MARIADB_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: senha
+      MYSQL_DATABASE: novos_titans
+      MYSQL_USER: sam_user
+      MYSQL_PASSWORD: senha2
+    volumes:
+      - ./mysql_data:/var/lib/mysql
 
   phpmyadmin:
     image: phpmyadmin
