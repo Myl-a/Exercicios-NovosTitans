@@ -1,67 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Exercicio 12</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        .caixa {
-            border: 1px solid #000;
-            padding: 10px;
-            margin: 5px;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Exercício 12</title>
 </head>
 <body>
     <div class="container">
-        <h1>Repetir Palavra</h1>
-        <form method="POST" action="">
-            <div class="form-group">
-                <label for="palavra">Digite uma palavra:</label>
-                <input type="text" name="palavra" id="palavra" placeholder="Digite a palavra" required>
+        <h1>Exercício 12</h1>
+
+        <form action="index.php" method="POST">
+            <div class="input-field">
+                <input type="text" name="palavra" id="palavra" placeholder="Digite uma palavra" required>
+                <label for="palavra">Palavra</label>
             </div>
-            <div class="form-group">
-                <label for="repeticoes">Número de repetições:</label>
-                <input type="number" name="repeticoes" id="repeticoes" placeholder="Número de repetições" min="1" required>
-            </div>
-            <button type="submit" name="submit">Repetir</button>
+            <button class="btn waves-effect waves-light" type="submit">Imprimir</button>
         </form>
-        <div id="loading" style="display: none;">
-            Carregando...
-        </div>
-        <div id="output">
-        <?php
-        if ($_SERVER["REQUEST_METHOD"] == "POST") {
-            $palavra = $_POST["palavra"];
-            $repeticoes = intval($_POST["repeticoes"]);
-
-            for ($i = 1; $i <= $repeticoes; $i++) {
-                echo '<div class="caixa">';
-                for ($j = 1; $j <= $i; $j++) {
-                    echo '<span class="result chip">' . htmlspecialchars($palavra) . '</span>';
-                }
-                echo '</div>';
-            }
-
-            // Inclua a conexão com o banco de dados e insira os dados com segurança
-            include("conexao.php");
-
-            $palavraSegura = mysqli_real_escape_string($conexao, $palavra); // Evita injeção SQL
-            $sql = "INSERT INTO Exercicio_12 (Palavras, Repetições) VALUES ('$palavraSegura', $repeticoes)";
-
-            if (mysqli_query($conexao, $sql)) {
-                // Inserção bem-sucedida
-            } else {
-                echo "Erro: " . mysqli_error($conexao);
-            }
-
-            mysqli_close($conexao);
-        } else {
-            echo '<span class="result chip">' . "Por favor, preencha o formulário." . '</span> ';
-        }
-        ?>
-        </div>
-        <a href="listagem.php">Ver Listagem</a>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>
-
