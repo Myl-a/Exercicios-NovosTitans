@@ -19,6 +19,7 @@
 
             <button class="btn waves-effect waves-light" type="submit">Imprimir</button>
         </form>
+        <a href="listagem.php">Ver Listagem</a>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
