@@ -3,13 +3,6 @@
 <head>
     <title>Exercicio 12</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        .caixa {
-            border: 1px solid #000;
-            padding: 10px;
-            margin: 5px;
-        }
-    </style>
 </head>
 <body>
     <div class="container">
