@@ -68,12 +68,12 @@
     </ul>
     <ul>
         <li>
-            <a href="/Exercicio13/">Exercicio 13 - OBS: under development</a>
+            <a href="/Exercicio13/">Exercicio 13</a>
         </li>
     </ul>
     <ul>
         <li>
-            <a href="/Exercicio14/">Exercicio 14 - OBS: under development</a>
+            <a href="/Exercicio14/">Exercicio 14 </a>
         </li>
     </ul>
     <ul>
