@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Verificador de Par ou Ímpar</title>
+    <title>Exercicio 16</title>
     <link rel="stylesheet" href="styles.css">
 <body>
     <div class="container">
