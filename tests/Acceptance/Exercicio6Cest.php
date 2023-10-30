@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Tests\Acceptance;
 
 use Tests\Support\AcceptanceTester;
@@ -8,22 +7,18 @@ use Tests\Support\AcceptanceTester;
 class Exercicio6Cest
 {
     public function _before(AcceptanceTester $I)
-    {/**Ler um número inteiro entre 1 e 12 e escrever o mês correspondente. Caso o número seja
-         * fora desse intervalo, informar que não existe mês com este número */
+    {
     }
 
     // tests
     public function TitleExercicio6Test(AcceptanceTester $I)
     {
         $I->amOnPage("/Exercicio6");
-        $I->seeInTitle("Consulta de Mês");
+        $I->seeInTitle("Consulta de Mês"); // Update the expected title
     }
-
     public function FormExercicio6Test(AcceptanceTester $I)
-    {
-        
+    {  
         $I->amOnPage('/Exercicio6');
-
         $meses = [
             1 => 'janeiro',
             2 => 'fevereiro',
@@ -38,21 +33,21 @@ class Exercicio6Cest
             11 => 'novembro',
             12 => 'dezembro'
         ];
-
-        for ($numero = 1; $numero <= 12; $numero++) {
-            $I->fillField('num', $numero);
+        for ($num = 1; $num <= 12; $num++) {
+            $I->fillField('#numeroMes', $num);
             $I->click('Consultar');
-
-            $meses = $meses[$numero];
-            $I->see("O número $numero corresponde ao mês de $meses.");
+            $mes = $meses[$num];
+            $I->see("O número $num corresponde ao mês de $mes.");
         }
     }
-
     public function VerificarExercicio6Test(AcceptanceTester $I)
     {
         $I->amOnPage('/Exercicio6');
-        $I->fillField('num','15');
+        $I->fillField('#numeroMes', '15');
         $I->click('Consultar');
-        $I->see('Não existe mês correspondente para o número informado.');
+        $I->see('Não existe mês com o número 15.');
     }
+
+
+
 }
