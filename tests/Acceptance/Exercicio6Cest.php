@@ -5,7 +5,7 @@ namespace Tests\Acceptance;
 
 use Tests\Support\AcceptanceTester;
 
-class Exercicio7Cest
+class Exercicio6Cest
 {
     public function _before(AcceptanceTester $I)
     {/**Ler um número inteiro entre 1 e 12 e escrever o mês correspondente. Caso o número seja
