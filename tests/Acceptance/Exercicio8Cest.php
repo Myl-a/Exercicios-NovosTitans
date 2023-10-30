@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Tests\Acceptance;
 
 use Tests\Support\AcceptanceTester;
@@ -12,17 +11,19 @@ class Exercicio8Cest
     }
 
     // tests
-    public function Exercicio8Test(AcceptanceTester $I)
+    public function tryToTest(AcceptanceTester $I)
     {
         $I->amOnPage('/Exercicio8');
-        $I->fillField('countRepeat', '3');
-        $I->click('Enviar');
-        $I->see("SOL");
-        $I->see("SOL");
-        $I->see("SOL");
-        $I->amOnPage('/Exercicio9/form.html');
-        $I->fillField('countRepeat', 'abc');
+
+        // Test input with a valid value (e.g., 5)
+        $I->fillField('inputNumber', '5');
         $I->click('Calcular');
-        $I->see("Por favor, insira um número válido.");
+        $I->see('Números de 1 até 5:');
+        $I->see('Produto dos números: 120');
+
+        // Test input with an invalid value (e.g., 0)
+        $I->fillField('inputNumber', '0');
+        $I->click('Calcular');
+        $I->see('Por favor, insira um número válido maior ou igual a 1.');
     }
 }
