@@ -1,31 +1,25 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Exercicio 12</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Exercício 12</title>
 </head>
 <body>
-<div class="container">
-        <h1>Repetir Palavra</h1>
-        <form method="POST" action="">
-            <div class="form-group">
-                <label for="palavra">Digite uma palavra:</label>
-                <input type="text" name="palavra" id="palavra" placeholder="Digite a palavra">
+    <div class="container">
+        <h1>Exercício 12</h1>
+
+        <form action="index.php" method="POST">
+            <div class="input-field">
+                <input type="text" name="palavra" id="palavra" placeholder="Digite uma palavra" required>
+                <label for="palavra">Palavra</label>
             </div>
-            <div class="form-group">
-                <label for="repeticoes">Número de repetições:</label>
-                <input type="number" name="repeticoes" id="repeticoes" placeholder="Número de repetições" min="1">
-            </div>
-            <button type="submit" name="submit">Repetir</button>
+
+            <button class="btn waves-effect waves-light" type="submit">Imprimir</button>
         </form>
-        <div id="loading" style="display: none;">
-            Carregando...
-        </div>
-        <div id="output">
-            <h2>Palavras Repetidas:</h2>
-            <ul id="palavras-repetidas">
-            </ul>
-        </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>
-
