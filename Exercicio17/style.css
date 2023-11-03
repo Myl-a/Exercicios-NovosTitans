@@ -3,38 +3,28 @@ body {
     background-color: #f0f0f0;
     margin: 0;
     padding: 0;
-    text-align: center; /* Centraliza horizontalmente */
+    text-align: center;
 }
-
-/* Estilo para o cabeçalho */
 h1 {
-    background-color: #3498db;
+    background-color: #0a850a;
     color: #fff;
     padding: 20px;
 }
-
-/* Estilo para o contêiner principal */
 .container {
     max-width: 600px;
-    margin: 0 auto; /* Centraliza horizontalmente */
+    margin: 0 auto;
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-
-/* Estilo para os resultados */
 .result {
     margin-top: 20px;
 }
-
-/* Estilo para os links */
 a {
     text-decoration: none;
     color: #3498db;
 }
-
-/* Estilo para a tabela (opcional) */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -49,6 +39,6 @@ th, td {
 }
 
 th {
-    background-color: #3498db;
+    background-color: #078307;
     color: #fff;
 }

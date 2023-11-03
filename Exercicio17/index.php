@@ -16,35 +16,35 @@
             </div>
             <div class="input-field col s1">
             <label for="Vetor1">Valor 2:</label>
-            <input type="number" id="vetor2" name="Vetor1[]" required>
+            <input type="number" id="Vetor2" name="Vetor1[]" required>
             </div>
             <div class="input-field col s1">
             <label for="Vetor1">Valor 3:</label>
-            <input type="number" id="vetor3" name="Vetor1[]" required>
+            <input type="number" id="Vetor3" name="Vetor1[]" required>
             </div>
             <div class="input-field col s1">
             <label for="Vetor1">Valor 4:</label>
-            <input type="number" id="vetor4" name="Vetor1[]" required>
+            <input type="number" id="Vetor4" name="Vetor1[]" required>
             </div>
             <div class="input-field col s1">
             <label for="Vetor1">Valor 5:</label>
-            <input type="number" id="vetor5" name="Vetor1[]" required>
+            <input type="number" id="Vetor5" name="Vetor1[]" required>
             </div>
             <div class="input-field col s1">
             <label for="Vetor1">Valor 6:</label>
-            <input type="number" id="vetor6" name="Vetor1[]" required>
+            <input type="number" id="Vetor6" name="Vetor1[]" required>
             </div>
             <div class="input-field col s1">
             <label for="Vetor1">Valor 7:</label>
-            <input type="number" id="vetor7" name="Vetor1[]" required>
+            <input type="number" id="Vetor7" name="Vetor1[]" required>
             </div>
             <div class="input-field col s1">
             <label for="Vetor1">Valor 8:</label>
-            <input type="number" id="vetor8" name="Vetor1[]" required>
+            <input type="number" id="Vetor8" name="Vetor1[]" required>
             </div>
             <div class="input-field col s1">
             <label for="Vetor1">Valor 9:</label>
-            <input type="number" id="vetor9" name="Vetor1[]" required>
+            <input type="number" id="Vetor9" name="Vetor1[]" required>
             </div>
             <div class="input-field col s1">
             <label for="Vetor1">Valor 10:</label>
@@ -88,7 +88,7 @@
             </div>
             <div class="input-field col s1">
             <label for="Vetor1">Valor 20:</label>
-            <input type="number" id="vetor20" name="Vetor1[]" required>
+            <input type="number" id="Vetor20" name="Vetor1[]" required>
             </div>
             <br>
             <button class="btn green darken-4" type="submit" style="margin-top: 100px;">Enviar</button>
@@ -109,7 +109,7 @@
                 var formData = $(this).serialize();
                 $.ajax({
                     type: "POST", 
-                    url: "index.php", 
+                    url: "process.php", 
                     data: formData, 
                     success: function(response) {
                         console.log("Requisição AJAX enviada com sucesso!");
