@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html>
 <head>
     <title>Exercicio 10</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Gerador de Tabuada</h1>
-        <form method="post">
-            <label for="numero">Digite um número:</label>
-            <input type="number" id="numero" name="numero" required>
-            <input type="submit" value="Gerar Tabuada">
-        </form>
-    </div>
+    <h1>Tabuada de um Número</h1>
+    <form action="conection.php" method="post">
+        <label for="numero">Número:</label>
+        <input type="number" name="numero" id="numero" required>
+        <button type="submit">Calcular</button>
+    </form>
+    <h2>Resultados</h2>
+    <ul id="resultados">
+    </ul>
 </body>
 </html>
