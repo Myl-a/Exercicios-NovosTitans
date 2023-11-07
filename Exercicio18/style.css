@@ -1,0 +1,21 @@
+body {
+    background-color: #f3e5f5;
+}
+.container {
+    background-color: #673ab7;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.custom-label {
+    font-size: 18px;
+    color: #fff;
+}
+.btn {
+    background-color: #673ab7;
+    color: #fff;
+}
+.btn:hover {
+    background-color: #5e35b1;
+}
