@@ -9,6 +9,6 @@
     if ($conexao->connect_errno) {
         echo "Erro:".$conexao->connect_error;
     } else {
-        echo "Conectado com o banco de dados";
+        echo "";
     }
 ?>
