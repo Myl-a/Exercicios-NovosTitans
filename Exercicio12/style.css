@@ -1,0 +1,11 @@
+body, .container {
+    background-color: white !important;
+    color: black !important;
+}
+.btn {
+    background-color: black !important;
+    color: white !important;
+}
+label, input[type="text"] {
+    color: black !important;
+}
