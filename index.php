@@ -68,37 +68,37 @@
     </ul>
     <ul>
         <li>
-            <a href="/Exercicio13/">Exercicio 13 - OBS: under development</a>
+            <a href="/Exercicio13/">Exercicio 13</a>
         </li>
     </ul>
     <ul>
         <li>
-            <a href="/Exercicio14/">Exercicio 14 - OBS: under development</a>
+            <a href="/Exercicio14/">Exercicio 14</a>
         </li>
     </ul>
     <ul>
         <li>
-            <a href="/Exercicio15/">Exercicio 15 - OBS: under development</a>
+            <a href="/Exercicio15/">Exercicio 15</a>
         </li>
     </ul>
     <ul>
         <li>
-            <a href="/Exercicio16/">Exercicio 16 - OBS: under development</a>
+            <a href="/Exercicio16/">Exercicio 16</a>
         </li>
     </ul>
     <ul>
         <li>
-            <a href="/Exercicio17/">Exercicio 17 - OBS: under development</a>
+            <a href="/Exercicio17/">Exercicio 17</a>
         </li>
     </ul>
     <ul>
         <li>
-            <a href="/Exercicio18/">Exercicio 18 - OBS: under development</a>
+            <a href="/Exercicio18/">Exercicio 18</a>
         </li>
     </ul>
     <ul>
         <li>
-            <a href="/Exercicio19/">Exercicio 19 - OBS: under development</a>
+            <a href="/Exercicio19">Exercicio 19</a>
         </li>
     </ul>
     <ul>
