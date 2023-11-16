@@ -12,7 +12,7 @@
 <?php
 include("conexao.php"); 
 
-$selectSql = "SELECT numeros, resultado FROM exercicio13";
+$selectSql = "SELECT numeros, resultado FROM Exercicio13";
 $busca = mysqli_query($conexao, $selectSql);
 
 if (mysqli_num_rows($busca) > 0) {

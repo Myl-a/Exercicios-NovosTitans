@@ -1,5 +1,6 @@
 <?php
 
+
 namespace Tests\Acceptance;
 
 use Tests\Support\AcceptanceTester;
@@ -10,13 +11,14 @@ class Exercicio13Cest
     {
     }
 
-    // Teste automatizado
-    public function Exercicio13(AcceptanceTester $I)
+    // tests
+    public function Exercicio13Test(AcceptanceTester $I)
     {
+    
         $I->amOnPage('/Exercicio13');
-        $I->fillField('number', '165');
+        $I->fillField('number', '150,165');
         $I->click('Contar');
-        $I->see("Foi digitado 1 número entre 100 e 200.");
+        $I->see("Foi digitado 2 número(s) entre 100 e 200.");
 
 
         $I->amOnPage('/Exercicio13');
