@@ -8,7 +8,6 @@ class Exericio12Cest
 {
     public function _before(AcceptanceTester $I)
     {
-        // Se necessário, você pode adicionar configurações antes de cada teste
     }
 
     // Teste
@@ -17,8 +16,6 @@ class Exericio12Cest
         $I->amOnPage("/Exercicio12");
         $I->fillField("palavra", 'Teste');
         $I->click('Imprimir');
-    
-        // Adicione instruções de depuração
         codecept_debug($I->grabTextFrom('body'));
     
         $I->see('Teste');
