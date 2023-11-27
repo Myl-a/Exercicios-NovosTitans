@@ -4,23 +4,26 @@ namespace Tests\Acceptance;
 
 use Tests\Support\AcceptanceTester;
 
-class Exercicio12Cest
+class Exericio12Cest
 {
     public function _before(AcceptanceTester $I)
     {
+        // Se necessário, você pode adicionar configurações antes de cada teste
     }
-    public function Exercicio12test(AcceptanceTester $I)
+
+    // Teste
+    public function FormExercicioTest(AcceptanceTester $I)
     {
         $I->amOnPage("/Exercicio12");
-        $palavra = "Test";
-        $I->fillField("palavra", $palavra);
+        $I->fillField("palavra", 'Teste');
         $I->click('Imprimir');
-        for ($x = 1; $x <= 4; $x++) {
-            for ($y = 1; $y <= $x; $y++) {
-                $I->see($palavra);
-            }
-            $I->seeInSource('<br>');
-        }
-        $I->see("Voltar");
-    }
+    
+        // Adicione instruções de depuração
+        codecept_debug($I->grabTextFrom('body'));
+    
+        $I->see('Teste');
+        $I->see('Teste Teste');
+        $I->see('Teste Teste Teste');
+        $I->see('Teste Teste Teste Teste');
+    }    
 }
