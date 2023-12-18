@@ -4,28 +4,23 @@ namespace Tests\Acceptance;
 
 use Tests\Support\AcceptanceTester;
 
-class Exercicio12Cest
+class Exericio12Cest
 {
     public function _before(AcceptanceTester $I)
     {
     }
 
-    // Teste automatizado
-    public function Exercicio12test(AcceptanceTester $I)
+    // Teste
+    public function FormExercicioTest(AcceptanceTester $I)
     {
         $I->amOnPage("/Exercicio12");
-        $I->see("Repetir Palavra");
-
-        $palavra = "Test";
-        $repeticoes = 4;
-
-        $I->fillField("palavra", $palavra);
-        $I->fillField("repeticoes", $repeticoes);
-        $I->click('Repetir');
-
-        $I->see('Test');
-        $I->see('TestTest'); 
-        $I->see('TestTestTest'); 
-        $I->see('TestTestTestTest');
-    }
+        $I->fillField("palavra", 'Teste');
+        $I->click('Imprimir');
+        codecept_debug($I->grabTextFrom('body'));
+    
+        $I->see('Teste');
+        $I->see('Teste Teste');
+        $I->see('Teste Teste Teste');
+        $I->see('Teste Teste Teste Teste');
+    }    
 }

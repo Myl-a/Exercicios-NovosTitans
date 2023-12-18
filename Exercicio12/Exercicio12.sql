@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: exercicios-novostitans-database-1
--- Tempo de geração: 26/09/2023 às 16:52
+-- Tempo de geração: 03/11/2023 às 23:06
 -- Versão do servidor: 11.1.2-MariaDB-1:11.1.2+maria~ubu2204
 -- Versão do PHP: 8.2.10
 
@@ -24,12 +24,12 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `Exercicio_12`
+-- Estrutura para tabela `Exercicio12`
 --
 
-CREATE TABLE `Exercicio_12` (
-  `Palavras` text NOT NULL COMMENT 'palavra inserida',
-  `Repetições` int(11) NOT NULL COMMENT 'numero de repetições'
+CREATE TABLE `Exercicio12` (
+  `Palavras` varchar(300) NOT NULL,
+  `Repetições` varchar(300) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 COMMIT;
 
