@@ -9,11 +9,10 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Exercicio 15</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <form id="calculo" action="index.php" method="post">
+        <form id="calculo" action="process.php" method="post">
             <div class="input-field">
                 <label for="massaInicial">Massa Inicial do Material Radioativo:</label>
                 <input type="number" id="massaInicial" name="massaInicial">
@@ -36,9 +35,11 @@
             $("#calculo").submit(function(event) {
                 event.preventDefault();
                 var formData = $(this).serialize();
+
+                // requisição AJAX
                 $.ajax({
                     type: "POST", 
-                    url: "index.php", 
+                    url: "process.php", 
                     data: formData, 
 
                     success: function(response) {
