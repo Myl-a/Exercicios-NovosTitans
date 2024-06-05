@@ -9,9 +9,7 @@ class Exercicio20Cest
     public function _before(AcceptanceTester $I)
     {
     }
-
-    // testes
-    public function FromExercicio20Test(AcceptanceTester $I)
+    public function FromExercicioTest(AcceptanceTester $I)
     {
         $I->amOnPage("/Exercicio20");
 
@@ -47,26 +45,26 @@ class Exercicio20Cest
 
         $I->click('Enviar');
 
-        $I->see("2", "table tr:nth-child(1) td:nth-child(1)"); 
-        $I->see("4", "table tr:nth-child(2) td:nth-child(1)"); 
-        
-        $I->see("9", "table tr:nth-child(1) td:nth-child(2)"); 
-        $I->see("4", "table tr:nth-child(2) td:nth-child(2)"); 
+        $I->waitForText("2", 10, "table tr:nth-child(1) td:nth-child(1)");
+        $I->waitForText("4", 10, "table tr:nth-child(2) td:nth-child(1)");
+        $I->waitForText("9", 10, "table tr:nth-child(1) td:nth-child(2)");
+        $I->waitForText("4", 10, "table tr:nth-child(2) td:nth-child(2)");
 
-        $I->seeInDatabase("exercicio20", ["matriz" => "2, 9, 56, 7, 1, 4, 4, 1, 6, 8, 58, 4, 3, 9, 11, 48, 2, 5, 15, 16, 4, 3, 9, 3, 5"]);
-        $I->seeInDatabase('exercicio20', ['pares' => '2, 56, 4, 4, 6, 8, 58, 4, 48, 2, 16, 4']);
-        $I->seeInDatabase('exercicio20', ['impares' => '9, 7, 1, 1, 3, 9, 11, 5, 15, 3, 9, 3, 5']);
+        $I->seeInDatabase("exercicio20", [
+            "matriz" => "2, 9, 56, 7, 1, 4, 4, 1, 6, 8, 58, 4, 3, 9, 11, 48, 2, 5, 15, 16, 4, 3, 9, 3, 5",
+            "pares" => "2, 56, 4, 4, 6, 8, 58, 4, 48, 2, 16, 4",
+            "impares" => "9, 7, 1, 1, 3, 9, 11, 5, 15, 3, 9, 3, 5"
+        ]);
     }
 
     public function FromListagem(AcceptanceTester $I)
     {
         $I->amOnPage("/Exercicio20");
 
-        $I->click('Carregar Listagem');
-        $I->amOnPage("/Exercicio20/listagem.php");
-
-        $I->see('Matriz: 2, 9, 56, 7, 1, 4, 4, 1, 6, 8, 58, 4, 3, 9, 11, 48, 2, 5, 15, 16, 4, 3, 9, 3, 5');
-        $I->see('Pares: 2, 56, 4, 4, 6, 8, 58, 4, 48, 2, 16, 4');
-        $I->see('Ímpares: 9, 7, 1, 1, 3, 9, 11, 5, 15, 3, 9, 3, 5');
+        $I->click('#CarregarListagem');
+        $I->waitForText('Matriz:', 10, '#listagem');
+        $I->see('Matriz: 2, 9, 56, 7, 1, 4, 4, 1, 6, 8, 58, 4, 3, 9, 11, 48, 2, 5, 15, 16, 4, 3, 9, 3, 5', '#listagem');
+        $I->see('Pares: 2, 56, 4, 4, 6, 8, 58, 4, 48, 2, 16, 4', '#listagem');
+        $I->see('Ímpares: 9, 7, 1, 1, 3, 9, 11, 5, 15, 3, 9, 3, 5', '#listagem');
     }
 }
